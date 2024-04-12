@@ -1,0 +1,156 @@
+@font-face {
+    font-family: myfont, font-cool;
+    src: url(./fonts/fontawesome-webfont.svg);
+    font-name: myfont;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+}
+header{
+    background-image: url(./images/bokeh_car_lights_bg.jpg);
+    height: 400px;
+}
+.S1{
+    background-color: rgb(228, 228, 228);
+    padding-top: 40px;
+    height: 400px;
+}
+h3{
+    color: white;
+}
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+}
+ul{
+    list-style: none;
+    display: flex;
+}
+a{
+    text-decoration: none;
+    color: rgba(124, 124, 124, 0.596)
+}
+ul > li{
+    font-size: 1.25em;
+    margin-right: 25px;
+
+}
+.Sup{
+    background-color: white;
+    text-align: center;
+    height: 30;
+    width: 80px;
+    border-radius: 15px;
+}
+#Sign-up{
+    color: black;
+}
+.apresentacao{
+    text-align: center;
+    color: white;
+    margin-top: 100px;
+    font-family: 1.0625em;
+}
+#btn{
+
+    width: 190px;
+    height: 30px;
+    background-color: rgb(0, 195, 255);
+    border: 0px;
+    border-style: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+main{
+    margin: 0px;
+    background-color: rgba(240, 248, 255, 0);
+    text-align: center;   
+    height: 900px;
+}
+main > h2{
+    color: rgb(155, 155, 155);
+}
+main > p{
+    color: rgb(116, 116, 116);
+}
+.perfis{
+    display: flex;
+    justify-content: space-evenly;
+}
+.perfil{
+    margin-right:0px;
+    display: flex;
+}
+.perfil > img{
+    border-style: none;
+    border-radius: 50% 50%;
+}
+.Fim-Ssec{
+    text-align: center;
+    margin-top: 100px
+}
+.Fim-Ssec > p{
+    margin-left: 330px;
+    width: 700px;
+}
+.blocos{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.bloco{
+    height: 225px;
+    width: 225px;
+    border: 1px;
+    border-style:solid;
+    border-color: rgba(0, 0, 0, 0.249);
+    padding: 15px;   
+    background-color:white; 
+}
+.bloco > p{
+    text-align: justify;
+    
+}
+.Ssec{
+    margin-top: 0px;
+}
+footer{
+    color: rgb(116, 116, 116);
+    background-color: rgba(0, 0, 0, 0.842);
+    margin-top: 0px;
+    height: 350px;
+}
+h5{
+    color: rgb(155, 155, 155);   
+}
+.comendadors{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin-top: 45px;
+
+}
+.comendadors > div{
+    margin-right: 0px;
+}
+.redes{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.SAIDAQUI{
+    margin: 0px;
+}
+hr{
+    width: 1100px;
+}
+.span-footer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 120px;
+}
+.span-footer > span{
+    margin-right: 20px;
+}
