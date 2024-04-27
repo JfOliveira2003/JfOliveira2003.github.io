@@ -1,0 +1,171 @@
+body{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(218, 218, 218);
+    color: rgb(38, 55, 87);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+h1, h3{
+    margin: 0px;
+}
+header{
+    text-align: center;
+    width: 75%;
+}
+nav{
+    background-color: rgb(148, 148, 148);
+    height: 40px;
+    padding-top:1px;
+}
+ul{
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: rgb(38, 55, 87);
+    font-size: 1.25em;
+}
+main{
+    background-color: white;
+    margin-top: 15px;
+    width: 75%;
+    height: 1250px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.sec1{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.sec2{
+    margin-top: 20px;
+}
+.boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    padding-left: 20px;
+}
+small{
+    margin-left: 21px;
+    display: block;
+    background-color: rgb(148, 148, 148);
+    width: 970px;
+    font-size: 1.1em;
+}
+.sec3{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding-right: 22px;
+}
+article{
+    width: 540px;
+    background-color: rgb(148, 148, 148);
+    border-style: solid;
+    border-color: rgb(148, 191, 255);
+}
+.sec3 > aside{
+    width: 300px;
+}
+footer{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btn{
+    border-style: none;
+    background-color: purple;
+    height: 30px;
+    border-radius: 8px;
+    color: white;
+}
+.btn:hover{
+    cursor: pointer;
+}
+.glyph{
+    margin-top: 15px;
+}
+.glyph > i{
+    margin-left: 10px   ;
+}
+@media only screen and (max-width: 576px){
+    body{
+        background-color: white;
+        margin: 0px;
+        justify-content: flex-start;
+    }
+    main{
+        width: 100%;
+        height: 1100px;
+    }
+    small{
+        width: 100%;
+        margin-left: 0px;
+    }
+    img{
+        width: 100%;
+    }
+    
+    header{
+        width: 100%;
+        text-align: center;
+    }
+    h1{
+        font-style: 0.1em;
+        background-color: rgb(201, 201, 201);
+    }
+    .sec2{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .boxes{
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .btn{
+        margin-left: 45px;
+    }
+    div > .flex-item{
+        flex:1;   
+    }
+    div > .flex-item > img{
+        width: 90%;
+    }
+    div > .img-above{
+        width: 100%;
+        height: 150px;
+    }
+    #btn3{
+        margin-left: 175px;
+    }
+    .sec3{
+        width: 100%;
+    }
+    article{
+        width: 100%;
+        height: 0%;
+        margin-right: 15px;
+    }
+    p{
+        font-size: 0.7em;
+    }
+    aside > img{
+        width: 150px;
+    }
+    h3{
+        font-size: 0.8em;
+    }
+}
