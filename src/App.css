@@ -1,4 +1,3 @@
-
 body {
   margin: 0;
   font-family: "Roboto Mono", monospace;
@@ -6,12 +5,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.sub-title{
-  color: rgba(0,0,0.6);
+.sub-title {
+  color: rgba(0, 0, 0.6);
 }
 
 .App {
-  background-image: url('../public/cat.gif');
+  background-image: url("../public/cat.gif");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -20,7 +19,12 @@ body {
 }
 
 .content {
+  max-width: 960px;
+  margin: 0 auto;
   padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .skills-container {
@@ -41,6 +45,10 @@ body {
 .skill-box img {
   width: 50px;
   height: 50px;
+}
+#contact {
+  background-color: #161b22;
+  width: 1900px;
 }
 
 .App-header {
@@ -70,6 +78,28 @@ a:hover {
   text-decoration: underline;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+#exp {
+  font-size: 1.25em;
+}
+
+.experience-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-box {
+  border-radius: 6px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  margin: 10px;
 }
