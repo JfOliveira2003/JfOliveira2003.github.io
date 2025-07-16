@@ -22,22 +22,51 @@ function App() {
         <section id="experience">
           <h2>Experience</h2>
           <div className="card">
-            <h3>A4PM</h3>
-            <p>DevOps Engineer | 2024 - Present</p>
-            <ul>
-              <li>Implemented CI/CD pipelines for various applications.</li>
-              <li>Managed cloud infrastructure on AWS.</li>
-              <li>Automated operational tasks using Python and Bash.</li>
-            </ul>
+            <div className="experience-box">
+              <h3>A4PM</h3>
+              <p>
+                <strong>DevOps Engineer</strong> | 2024 - Present
+              </p>
+              <p>
+                I am responsible for building and scaling software for
+                large-scale government applications with container orchestration
+                using Kubernetes and GitLab CI/CD pipelines.
+              </p>
+              <ul>
+                <li>Implemented CI/CD pipelines for various applications.</li>
+                <li>Managed cloud infrastructure on AWS.</li>
+                <li>Automated operational tasks using Python and Bash.</li>
+              </ul>
+            </div>
+            <div className="experience-box">
+              <h3>CEFET/RJ</h3>
+              <p>
+                <strong>Software Engineer</strong> | 2023 - 2024
+              </p>
+              <p>
+                My university raised a team to build a management system for
+                them, i was a software engineer responsible to help build the
+                backend using Laravel framework and Php. I had my first contact
+                with agile methodologies in this project.
+                <ul>
+                  <li>
+                    Implemented the Business logical in the logical layer at the
+                    backend.
+                  </li>
+                  <li>
+                    Responsible to build the api endpoints in the presentation
+                    layer for the frontend{" "}
+                  </li>
+                  <li>
+                    Perfomed the documentation register for future workers
+                    understanding.
+                  </li>
+                </ul>
+              </p>
+            </div>
           </div>
         </section>
-        <section id="portfolio">
-          <h2>Portfolio</h2>
-          <div className="card">
-            <h3>Project X</h3>
-            <p>A brief description of Project X.</p>
-          </div>
-        </section>
+
         <section id="skills">
           <h2>Skills</h2>
           <div className="skills-container card">
@@ -89,6 +118,29 @@ function App() {
             <div className="skill-box">
               <img src="/spring.svg" alt="Spring" />
               <p>Spring</p>
+            </div>
+          </div>
+        </section>
+        <section id="portfolio">
+          <h2>Projects</h2>
+          <div className="card">
+            <div className="project-box">
+              <img src="/cat.png" alt="" />
+              <p>
+                "Integra.Cefet/RJ - For the Cloud" is a an unofficial web
+                application that unifies every useful resource for students of
+                the Federal Center of Technology in Rio de Janeiro, being hosted
+                at AWS with CI/CD pipelines. (CEFET/RJ).
+              </p>
+              <a href="https://github.com/JfOliveira2003/integra-cefetrj.phricardo.com/tree/develop">
+                Know more
+              </a>
+            </div>
+            <div className="project-box">
+              <h3>FLB - Fabricio Load Balancer</h3>
+              <p>
+                Load Balancer Service written in the go programming language
+              </p>
             </div>
           </div>
         </section>
