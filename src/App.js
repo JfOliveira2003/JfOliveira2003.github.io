@@ -1,13 +1,51 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./App.css";
 
 function App() {
+  useEffect(() => {
+    const sections = document.querySelectorAll("section");
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+          } else {
+            entry.target.classList.remove("visible");
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    sections.forEach((section) => {
+      observer.observe(section);
+    });
+
+    return () => {
+      sections.forEach((section) => {
+        observer.unobserve(section);
+      });
+    };
+  }, []);
   return (
     <div className="App">
       <div className="content">
         <header className="App-header">
-          <h1>Fabricio Jose</h1>
+          <h1>Fabricio Oliveira</h1>
           <h3>DevOps Engineer</h3>
+          <div className="contact-box">
+            <a href="mailto:fabriciojosemacedo@gmail.com">
+              <img id="network" src="/gmail.svg" width={35} height={35} />
+            </a>
+            <a href="https://www.linkedin.com/in/fabricio-oliveira-a11a012b7">
+              {" "}
+              <img id="network" src="/linkedin.svg" width={35} height={35} />
+            </a>
+            <a href="https://github.com/JfOliveira2003">
+              <img id="network" width={35} height={35} src="git.svg" alt="" />
+            </a>
+          </div>
         </header>
         <section id="about">
           <h2>About</h2>
@@ -35,9 +73,12 @@ function App() {
                   I am responsible for building and scaling software for
                   large-scale government applications with container
                   orchestration using Kubernetes and GitLab CI/CD pipelines.
+                  Daily handling with AWS services like ECS, EKS, RDS, S3 to
+                  mantain the needed infrastructure to contain the company
+                  applications and using IAM to mantain SSO.
                 </p>
                 <ul>
-                  <li>Implemented CI/CD pipelines for various applications.</li>
+                  <li>Implemented CI/CD pipelines for applications.</li>
                   <li>Managed cloud infrastructure on AWS.</li>
                   <li>Automated operational tasks using Python and Bash.</li>
                 </ul>
@@ -52,8 +93,10 @@ function App() {
                 <p>
                   My university raised a team to build a management system for
                   them, i was a software engineer responsible to help build the
-                  backend using Laravel framework and Php. I had my first
-                  contact with agile methodologies in this project.
+                  backend using Laravel framework and Php. My daily activities
+                  were build services for the frontend use while needing to
+                  integrate the three layers of the backend for deliver the
+                  content.
                   <ul>
                     <li>
                       Implemented the Business logical in the logical layer at
@@ -64,7 +107,7 @@ function App() {
                       layer for the frontend{" "}
                     </li>
                     <li>
-                      Perfomed the documentation register for future workers
+                      Perfomed the documentation record for future workers
                       understanding.
                     </li>
                   </ul>
@@ -156,20 +199,18 @@ function App() {
       <footer id="contact">
         <div className="contact-box">
           <a href="mailto:fabriciojosemacedo@gmail.com">
-            <img src="/gmail.svg" width={50} height={50} />
+            <img id="network" src="/gmail.svg" width={35} height={35} />
           </a>
           <a href="https://www.linkedin.com/in/fabricio-oliveira-a11a012b7">
             {" "}
-            Linkedin
+            <img id="network" src="/linkedin.svg" width={35} height={35} />
           </a>
           <a href="https://github.com/JfOliveira2003">
-            <img
-              width={50}
-              height={50}
-              src="github-142-svgrepo-com.svg"
-              alt=""
-            />
+            <img id="network" width={35} height={35} src="git.svg" alt="" />
           </a>
+        </div>
+        <div id="small">
+          <small>© 2025 Fabricio José</small>
         </div>
       </footer>
     </div>

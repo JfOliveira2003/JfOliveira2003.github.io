@@ -10,12 +10,25 @@ body {
 }
 
 .App {
+  position: relative;
+  min-height: 98vh;
+  color: white;
+  z-index: 1;
+}
+
+.App::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-image: url("../public/cat.gif");
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  min-height: 98vh;
-  color: white;
+  filter: blur(5px);
+  z-index: -1;
 }
 
 .content {
@@ -47,12 +60,22 @@ body {
   height: 50px;
 }
 #contact {
-  background-color: #161b22;
-  width: 1900px;
+  height: auto;
+  padding: 30px;
 }
-
+.contact-box {
+  display: flex;
+  justify-content: center;
+}
+#small {
+  display: flex;
+  justify-content: center;
+}
+#network {
+  margin: 4px;
+}
 .App-header {
-  //background-color: #282c34;
+  /* //background-color: #282c34; */
   padding: 20px;
   color: white;
   text-align: center;
@@ -67,6 +90,14 @@ body {
 
 section {
   margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+section.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 a {
