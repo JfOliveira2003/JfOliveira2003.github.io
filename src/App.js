@@ -191,7 +191,9 @@ function App() {
               <p>
                 Load Balancer Service written in the go programming language
               </p>
-              <a href="https://">Know more</a>
+              <a href="https://github.com/JfOliveira2003/Flip-Flop-Load-Balancer">
+                Know more
+              </a>
             </div>
           </div>
         </section>
