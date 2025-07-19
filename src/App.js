@@ -3,6 +3,7 @@ import "./App.css";
 
 function App() {
   useEffect(() => {
+    document.title = "Fabricio Oliveira";
     const sections = document.querySelectorAll("section");
 
     const observer = new IntersectionObserver(
@@ -23,7 +24,6 @@ function App() {
     });
 
     return () => {
-      document.title = "Fabricio Oliveira";
       sections.forEach((section) => {
         observer.unobserve(section);
       });
