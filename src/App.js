@@ -23,6 +23,7 @@ function App() {
     });
 
     return () => {
+      document.title = "Fabricio Oliveira";
       sections.forEach((section) => {
         observer.unobserve(section);
       });
