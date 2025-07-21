@@ -222,6 +222,14 @@ function App() {
               <img width={120} height={140} src="/c_language.jpg" alt="C" />
               <p>The C Programming Language</p>
             </div>
+            <div className="book-box">
+              <img width={120} height={150} src="/habits.jpg" alt="" />
+              <p>Atomic Habits</p>
+            </div>
+            <div className="book-box">
+              <img width={120} height={150} src="/hobbit.jpg" alt="" />
+              <p>The Hobbit</p>
+            </div>
           </div>
         </section>
       </div>
