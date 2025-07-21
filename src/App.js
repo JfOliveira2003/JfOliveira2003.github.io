@@ -198,6 +198,32 @@ function App() {
             </div>
           </div>
         </section>
+        <section id="books">
+          <h2>Some books that i really enjoy</h2>
+          <div className="books-container card">
+            <div className="book-box">
+              <img width={120} height={140} src="/OS.jpg" alt="Os" />
+              <p>Modern Operating Systems</p>
+            </div>
+            <div className="book-box">
+              <img
+                width={120}
+                height={140}
+                src="/algorithms.jpg"
+                alt="algorithms"
+              />
+              <p>Introduction to Algorithms</p>
+            </div>
+            <div className="book-box">
+              <img width={120} height={140} src="/network_book.jpg" />
+              <p>Computer Networks</p>
+            </div>
+            <div className="book-box">
+              <img width={120} height={140} src="/c_language.jpg" alt="C" />
+              <p>The C Programming Language</p>
+            </div>
+          </div>
+        </section>
       </div>
       <footer id="contact">
         <div className="contact-box">
